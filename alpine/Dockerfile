@@ -1,4 +1,4 @@
-FROM FROM php:7.0-fpm-alpine
+FROM php:7.0-fpm-alpine
 MAINTAINER Matt Glaman <nmd.matt@gmail.com>
 # Install modules
 RUN apk add --no-cache \
