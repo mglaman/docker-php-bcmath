@@ -13,6 +13,8 @@ RUN apt-get update && apt-get install -y \
 
 # Setup xdebug
 RUN pecl install xdebug-beta && docker-php-ext-enable xdebug
+# Install APCu
+RUN pecl install apcu && docker-php-ext-enable apcu
 
 # Install Blackfire
 RUN version=$(php -r "echo PHP_MAJOR_VERSION.PHP_MINOR_VERSION;") \
